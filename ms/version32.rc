@@ -1,0 +1,60 @@
+#include <winver.h>
+#include <windows.h>
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+1 VERSIONINFO
+  FILEVERSION 1,0,2,0
+  PRODUCTVERSION 1,0,2,0
+  FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+  FILEFLAGS 0x01L
+#else
+  FILEFLAGS 0x00L
+#endif
+  FILEOS 0x40004L
+#ifdef _LIB
+  FILETYPE VFT_LIB
+#else
+  FILETYPE VFT_DLL
+#endif
+  FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+	BLOCK "040904b0"
+	BEGIN
+	    // Required:
+	    VALUE "CompanyName", "The OpenSSL Project, http://www.openssl.org/\0"
+#if defined(WIN64)
+	    VALUE "FileDescription", "OpenSSL Shared Library (WIN64)\0"
+#else
+	    VALUE "FileDescription", "OpenSSL Shared Library (WIN32)\0"
+#endif
+	    VALUE "FileVersion", "1.0.2\0"
+#if defined(CRYPTO)
+	    VALUE "InternalName", "libeay32\0"
+	    VALUE "OriginalFilename", "libeay32.dll\0"
+#elif defined(SSL)
+	    VALUE "InternalName", "ssleay32\0"
+	    VALUE "OriginalFilename", "ssleay32.dll\0"
+#endif
+#if defined(WIN64)
+	    VALUE "ProductName", "The OpenSSL Toolkit (WIN64)\0"
+#else
+	    VALUE "ProductName", "The OpenSSL Toolkit (WIN32)\0"
+#endif
+	    VALUE "ProductVersion", "1.0.2\0"
+	    // Optional:
+	    VALUE "Comments", "Rebuilt by AnV Software (VC Windows Optimized)\0"
+	    VALUE "LegalCopyright", "Copyright  © 1998-2005 The OpenSSL Project. Copyright © 1995-1998 Eric A. Young, Tim J. Hudson. All rights reserved.\0"
+	    VALUE "LegalTrademarks", "The OpenSSL Project, AnV Software\0"
+	    //VALUE "PrivateBuild", "\0"
+	    //VALUE "SpecialBuild", "\0"
+	END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 0x4b0
+    END
+END

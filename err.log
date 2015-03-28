@@ -1,0 +1,418 @@
+bss_dgram.c: In function 'BIO_new_dgram_sctp':
+bss_dgram.c:977:27: error: storage size of 'auth' isn't known
+     struct sctp_authchunk auth;
+                           ^
+bss_dgram.c:996:24: error: 'IPPROTO_SCTP' undeclared (first use in this function)
+         setsockopt(fd, IPPROTO_SCTP, SCTP_AUTH_CHUNK, &auth,
+                        ^
+bss_dgram.c:996:24: note: each undeclared identifier is reported only once for each function it appears in
+bss_dgram.c:996:38: error: 'SCTP_AUTH_CHUNK' undeclared (first use in this function)
+         setsockopt(fd, IPPROTO_SCTP, SCTP_AUTH_CHUNK, &auth,
+                                      ^
+bss_dgram.c:997:27: error: invalid application of 'sizeof' to incomplete type 'struct sctp_authchunk'
+                    sizeof(struct sctp_authchunk));
+                           ^
+bss_dgram.c:1005:27: error: invalid application of 'sizeof' to incomplete type 'struct sctp_authchunk'
+                    sizeof(struct sctp_authchunk));
+                           ^
+bss_dgram.c:1016:39: error: 'sctp_assoc_t' undeclared (first use in this function)
+     sockopt_len = (socklen_t) (sizeof(sctp_assoc_t) + 256 * sizeof(uint8_t));
+                                       ^
+bss_dgram.c:1020:38: error: 'SCTP_LOCAL_AUTH_CHUNKS' undeclared (first use in this function)
+         getsockopt(fd, IPPROTO_SCTP, SCTP_LOCAL_AUTH_CHUNKS, authchunks,
+                                      ^
+bss_dgram.c:1020:62: warning: passing argument 4 of 'getsockopt' from incompatible pointer type
+         getsockopt(fd, IPPROTO_SCTP, SCTP_LOCAL_AUTH_CHUNKS, authchunks,
+                                                              ^
+In file included from ../../e_os.h:288:0,
+                 from ../cryptlib.h:65,
+                 from bss_dgram.c:63:
+c:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v3-rev1/mingw64/x86_64-w64-mingw32/include/winsock2.h:980:34: note: expected 'char *' but argument is of type 'struct sctp_authchunks *'
+   WINSOCK_API_LINKAGE int WSAAPI getsockopt(SOCKET s,int level,int optname,char *optval,int *optlen);
+                                  ^
+bss_dgram.c:1029:41: error: dereferencing pointer to incomplete type
+     for (p = (unsigned char *)authchunks->gauth_chunks;
+                                         ^
+bss_dgram.c:1081:38: error: 'SCTP_PARTIAL_DELIVERY_POINT' undeclared (first use in this function)
+         setsockopt(fd, IPPROTO_SCTP, SCTP_PARTIAL_DELIVERY_POINT, &optval,
+                                      ^
+bss_dgram.c:1081:67: warning: passing argument 4 of 'setsockopt' from incompatible pointer type
+         setsockopt(fd, IPPROTO_SCTP, SCTP_PARTIAL_DELIVERY_POINT, &optval,
+                                                                   ^
+In file included from ../../e_os.h:288:0,
+                 from ../cryptlib.h:65,
+                 from bss_dgram.c:63:
+c:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v3-rev1/mingw64/x86_64-w64-mingw32/include/winsock2.h:999:34: note: expected 'const char *' but argument is of type 'int *'
+   WINSOCK_API_LINKAGE int WSAAPI setsockopt(SOCKET s,int level,int optname,const char *optval,int optlen);
+                                  ^
+bss_dgram.c:977:27: warning: unused variable 'auth' [-Wunused-variable]
+     struct sctp_authchunk auth;
+                           ^
+bss_dgram.c: In function 'dgram_sctp_read':
+bss_dgram.c:1158:19: error: storage size of 'msg' isn't known
+     struct msghdr msg;
+                   ^
+bss_dgram.c:1159:18: error: storage size of 'iov' isn't known
+     struct iovec iov;
+                  ^
+bss_dgram.c:1178:13: warning: implicit declaration of function 'recvmsg' [-Wimplicit-function-declaration]
+             n = recvmsg(b->num, &msg, 0);
+             ^
+bss_dgram.c:1187:17: warning: implicit declaration of function 'CMSG_FIRSTHDR' [-Wimplicit-function-declaration]
+                 for (cmsg = CMSG_FIRSTHDR(&msg); cmsg;
+                 ^
+bss_dgram.c:1188:22: warning: implicit declaration of function 'CMSG_NXTHDR' [-Wimplicit-function-declaration]
+                      cmsg = CMSG_NXTHDR(&msg, cmsg)) {
+                      ^
+bss_dgram.c:1189:29: error: dereferencing pointer to incomplete type
+                     if (cmsg->cmsg_level != IPPROTO_SCTP)
+                             ^
+bss_dgram.c:1189:45: error: 'IPPROTO_SCTP' undeclared (first use in this function)
+                     if (cmsg->cmsg_level != IPPROTO_SCTP)
+                                             ^
+bss_dgram.c:1223:33: error: 'MSG_NOTIFICATION' undeclared (first use in this function)
+             if (msg.msg_flags & MSG_NOTIFICATION) {
+                                 ^
+bss_dgram.c:1225:24: error: dereferencing pointer to incomplete type
+                 if (snp->sn_header.sn_type == SCTP_SENDER_DRY_EVENT) {
+                        ^
+bss_dgram.c:1225:47: error: 'SCTP_SENDER_DRY_EVENT' undeclared (first use in this function)
+                 if (snp->sn_header.sn_type == SCTP_SENDER_DRY_EVENT) {
+                                               ^
+bss_dgram.c:1229:49: error: storage size of 'event' isn't known
+                     struct sctp_event_subscribe event;
+                                                 ^
+bss_dgram.c:1258:40: error: invalid application of 'sizeof' to incomplete type 'struct sctp_event_subscribe'
+                     eventsize = sizeof(struct sctp_event_subscribe);
+                                        ^
+bss_dgram.c:1259:58: error: 'SCTP_EVENTS' undeclared (first use in this function)
+                     i = getsockopt(b->num, IPPROTO_SCTP, SCTP_EVENTS, &event,
+                                                          ^
+bss_dgram.c:1269:43: error: invalid application of 'sizeof' to incomplete type 'struct sctp_event_subscribe'
+                                    sizeof(struct sctp_event_subscribe));
+                                           ^
+bss_dgram.c:1229:49: warning: unused variable 'event' [-Wunused-variable]
+                     struct sctp_event_subscribe event;
+                                                 ^
+bss_dgram.c:1289:71: error: 'MSG_EOR' undeclared (first use in this function)
+         while ((msg.msg_flags & MSG_NOTIFICATION) && (msg.msg_flags & MSG_EOR)
+                                                                       ^
+bss_dgram.c:1307:61: warning: passing argument 4 of 'getsockopt' from incompatible pointer type
+             ret = getsockopt(b->num, SOL_SOCKET, SO_RCVBUF, &optval, &optlen);
+                                                             ^
+In file included from ../../e_os.h:288:0,
+                 from ../cryptlib.h:65,
+                 from bss_dgram.c:63:
+c:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v3-rev1/mingw64/x86_64-w64-mingw32/include/winsock2.h:980:34: note: expected 'char *' but argument is of type 'int *'
+   WINSOCK_API_LINKAGE int WSAAPI getsockopt(SOCKET s,int level,int optname,char *optval,int *optlen);
+                                  ^
+bss_dgram.c:1317:50: error: 'SCTP_PARTIAL_DELIVERY_POINT' undeclared (first use in this function)
+                 getsockopt(b->num, IPPROTO_SCTP, SCTP_PARTIAL_DELIVERY_POINT,
+                                                  ^
+bss_dgram.c:1318:28: warning: passing argument 4 of 'getsockopt' from incompatible pointer type
+                            &optval, &optlen);
+                            ^
+In file included from ../../e_os.h:288:0,
+                 from ../cryptlib.h:65,
+                 from bss_dgram.c:63:
+c:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v3-rev1/mingw64/x86_64-w64-mingw32/include/winsock2.h:980:34: note: expected 'char *' but argument is of type 'int *'
+   WINSOCK_API_LINKAGE int WSAAPI getsockopt(SOCKET s,int level,int optname,char *optval,int *optlen);
+                                  ^
+bss_dgram.c:1351:37: error: 'sctp_assoc_t' undeclared (first use in this function)
+                 (socklen_t) (sizeof(sctp_assoc_t) + 256 * sizeof(uint8_t));
+                                     ^
+bss_dgram.c:1354:51: error: 'SCTP_PEER_AUTH_CHUNKS' undeclared (first use in this function)
+             ii = getsockopt(b->num, IPPROTO_SCTP, SCTP_PEER_AUTH_CHUNKS,
+                                                   ^
+bss_dgram.c:1355:29: warning: passing argument 4 of 'getsockopt' from incompatible pointer type
+                             authchunks, &optlen);
+                             ^
+In file included from ../../e_os.h:288:0,
+                 from ../cryptlib.h:65,
+                 from bss_dgram.c:63:
+c:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v3-rev1/mingw64/x86_64-w64-mingw32/include/winsock2.h:980:34: note: expected 'char *' but argument is of type 'struct sctp_authchunks *'
+   WINSOCK_API_LINKAGE int WSAAPI getsockopt(SOCKET s,int level,int optname,char *optval,int *optlen);
+                                  ^
+bss_dgram.c:1358:53: error: dereferencing pointer to incomplete type
+                 for (p = (unsigned char *)authchunks->gauth_chunks;
+                                                     ^
+bss_dgram.c:1159:18: warning: unused variable 'iov' [-Wunused-variable]
+     struct iovec iov;
+                  ^
+bss_dgram.c:1158:19: warning: unused variable 'msg' [-Wunused-variable]
+     struct msghdr msg;
+                   ^
+bss_dgram.c: In function 'dgram_sctp_write':
+bss_dgram.c:1387:18: error: array type has incomplete element type
+     struct iovec iov[1];
+                  ^
+bss_dgram.c:1388:19: error: storage size of 'msg' isn't known
+     struct msghdr msg;
+                   ^
+bss_dgram.c:1396:5: warning: implicit declaration of function 'CMSG_SPACE' [-Wimplicit-function-declaration]
+     char cmsgbuf[CMSG_SPACE(sizeof(struct sctp_sndrcvinfo))];
+     ^
+bss_dgram.c:1396:36: error: invalid application of 'sizeof' to incomplete type 'struct sctp_sndrcvinfo'
+     char cmsgbuf[CMSG_SPACE(sizeof(struct sctp_sndrcvinfo))];
+                                    ^
+bss_dgram.c:1434:24: error: 'caddr_t' undeclared (first use in this function)
+     msg.msg_control = (caddr_t) cmsgbuf;
+                        ^
+bss_dgram.c:1434:33: error: expected ';' before 'cmsgbuf'
+     msg.msg_control = (caddr_t) cmsgbuf;
+                                 ^
+bss_dgram.c:1462:9: error: dereferencing pointer to incomplete type
+     cmsg->cmsg_level = IPPROTO_SCTP;
+         ^
+bss_dgram.c:1462:24: error: 'IPPROTO_SCTP' undeclared (first use in this function)
+     cmsg->cmsg_level = IPPROTO_SCTP;
+                        ^
+bss_dgram.c:1463:9: error: dereferencing pointer to incomplete type
+     cmsg->cmsg_type = SCTP_SNDRCV;
+         ^
+bss_dgram.c:1463:23: error: 'SCTP_SNDRCV' undeclared (first use in this function)
+     cmsg->cmsg_type = SCTP_SNDRCV;
+                       ^
+bss_dgram.c:1464:9: error: dereferencing pointer to incomplete type
+     cmsg->cmsg_len = CMSG_LEN(sizeof(struct sctp_sndrcvinfo));
+         ^
+bss_dgram.c:1464:5: warning: implicit declaration of function 'CMSG_LEN' [-Wimplicit-function-declaration]
+     cmsg->cmsg_len = CMSG_LEN(sizeof(struct sctp_sndrcvinfo));
+     ^
+bss_dgram.c:1464:38: error: invalid application of 'sizeof' to incomplete type 'struct sctp_sndrcvinfo'
+     cmsg->cmsg_len = CMSG_LEN(sizeof(struct sctp_sndrcvinfo));
+                                      ^
+bss_dgram.c:1465:26: warning: implicit declaration of function 'CMSG_DATA' [-Wimplicit-function-declaration]
+     sndrcvinfo = (struct sctp_sndrcvinfo *)CMSG_DATA(cmsg);
+                          ^
+bss_dgram.c:1465:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     sndrcvinfo = (struct sctp_sndrcvinfo *)CMSG_DATA(cmsg);
+                  ^
+bss_dgram.c:1466:34: error: invalid application of 'sizeof' to incomplete type 'struct sctp_sndrcvinfo'
+     memset(sndrcvinfo, 0, sizeof(struct sctp_sndrcvinfo));
+                                  ^
+bss_dgram.c:1467:15: error: dereferencing pointer to incomplete type
+     sndrcvinfo->sinfo_stream = sinfo->snd_sid;
+               ^
+bss_dgram.c:1468:15: error: dereferencing pointer to incomplete type
+     sndrcvinfo->sinfo_flags = sinfo->snd_flags;
+               ^
+bss_dgram.c:1472:15: error: dereferencing pointer to incomplete type
+     sndrcvinfo->sinfo_ppid = sinfo->snd_ppid;
+               ^
+bss_dgram.c:1473:15: error: dereferencing pointer to incomplete type
+     sndrcvinfo->sinfo_context = sinfo->snd_context;
+               ^
+bss_dgram.c:1474:15: error: dereferencing pointer to incomplete type
+     sndrcvinfo->sinfo_timetolive = pinfo->pr_value;
+               ^
+bss_dgram.c:1475:45: error: invalid application of 'sizeof' to incomplete type 'struct sctp_sndrcvinfo'
+     msg.msg_controllen += CMSG_SPACE(sizeof(struct sctp_sndrcvinfo));
+                                             ^
+bss_dgram.c:1478:5: warning: implicit declaration of function 'sendmsg' [-Wimplicit-function-declaration]
+     ret = sendmsg(b->num, &msg, 0);
+     ^
+bss_dgram.c:1396:10: warning: unused variable 'cmsgbuf' [-Wunused-variable]
+     char cmsgbuf[CMSG_SPACE(sizeof(struct sctp_sndrcvinfo))];
+          ^
+bss_dgram.c:1388:19: warning: unused variable 'msg' [-Wunused-variable]
+     struct msghdr msg;
+                   ^
+bss_dgram.c:1387:18: warning: unused variable 'iov' [-Wunused-variable]
+     struct iovec iov[1];
+                  ^
+bss_dgram.c: In function 'dgram_sctp_ctrl':
+bss_dgram.c:1495:27: error: storage size of 'authkeyid' isn't known
+     struct sctp_authkeyid authkeyid;
+                           ^
+bss_dgram.c:1540:32: error: 'IPPROTO_SCTP' undeclared (first use in this function)
+             setsockopt(b->num, IPPROTO_SCTP, SCTP_NODELAY,
+                                ^
+bss_dgram.c:1540:46: error: 'SCTP_NODELAY' undeclared (first use in this function)
+             setsockopt(b->num, IPPROTO_SCTP, SCTP_NODELAY,
+                                              ^
+bss_dgram.c:1541:24: warning: passing argument 4 of 'setsockopt' from incompatible pointer type
+                        &data->in_handshake, sizeof(int));
+                        ^
+In file included from ../../e_os.h:288:0,
+                 from ../cryptlib.h:65,
+                 from bss_dgram.c:63:
+c:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v3-rev1/mingw64/x86_64-w64-mingw32/include/winsock2.h:999:34: note: expected 'const char *' but argument is of type 'int *'
+   WINSOCK_API_LINKAGE int WSAAPI setsockopt(SOCKET s,int level,int optname,const char *optval,int optlen);
+                                  ^
+bss_dgram.c:1549:30: error: invalid application of 'sizeof' to incomplete type 'struct sctp_authkeyid'
+         sockopt_len = sizeof(struct sctp_authkeyid);
+                              ^
+bss_dgram.c:1551:46: error: 'SCTP_AUTH_ACTIVE_KEY' undeclared (first use in this function)
+             getsockopt(b->num, IPPROTO_SCTP, SCTP_AUTH_ACTIVE_KEY, &authkeyid,
+                                              ^
+bss_dgram.c:1557:30: error: invalid application of 'sizeof' to incomplete type 'struct sctp_authkey'
+         sockopt_len = sizeof(struct sctp_authkey) + 64 * sizeof(uint8_t);
+                              ^
+bss_dgram.c:1564:16: error: dereferencing pointer to incomplete type
+         authkey->sca_keynumber = authkeyid.scact_keynumber + 1;
+                ^
+bss_dgram.c:1570:16: error: dereferencing pointer to incomplete type
+         authkey->sca_keylength = 64;
+                ^
+bss_dgram.c:1572:24: error: dereferencing pointer to incomplete type
+         memcpy(&authkey->sca_key[0], ptr, 64 * sizeof(uint8_t));
+                        ^
+bss_dgram.c:1575:46: error: 'SCTP_AUTH_KEY' undeclared (first use in this function)
+             setsockopt(b->num, IPPROTO_SCTP, SCTP_AUTH_KEY, authkey,
+                                              ^
+bss_dgram.c:1575:61: warning: passing argument 4 of 'setsockopt' from incompatible pointer type
+             setsockopt(b->num, IPPROTO_SCTP, SCTP_AUTH_KEY, authkey,
+                                                             ^
+In file included from ../../e_os.h:288:0,
+                 from ../cryptlib.h:65,
+                 from bss_dgram.c:63:
+c:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v3-rev1/mingw64/x86_64-w64-mingw32/include/winsock2.h:999:34: note: expected 'const char *' but argument is of type 'struct sctp_authkey *'
+   WINSOCK_API_LINKAGE int WSAAPI setsockopt(SOCKET s,int level,int optname,const char *optval,int optlen);
+                                  ^
+bss_dgram.c:1584:45: error: invalid application of 'sizeof' to incomplete type 'struct sctp_authkeyid'
+                          &authkeyid, sizeof(struct sctp_authkeyid));
+                                             ^
+bss_dgram.c:1593:30: error: invalid application of 'sizeof' to incomplete type 'struct sctp_authkeyid'
+         sockopt_len = sizeof(struct sctp_authkeyid);
+                              ^
+bss_dgram.c:1603:45: error: invalid application of 'sizeof' to incomplete type 'struct sctp_authkeyid'
+                          &authkeyid, sizeof(struct sctp_authkeyid));
+                                             ^
+bss_dgram.c:1628:34: error: invalid application of 'sizeof' to incomplete type 'struct sctp_authkeyid'
+             sockopt_len = sizeof(struct sctp_authkeyid);
+                                  ^
+bss_dgram.c:1650:56: error: 'SCTP_AUTH_DELETE_KEY' undeclared (first use in this function)
+                 ret = setsockopt(b->num, IPPROTO_SCTP, SCTP_AUTH_DELETE_KEY,
+                                                        ^
+bss_dgram.c:1651:53: error: invalid application of 'sizeof' to incomplete type 'struct sctp_authkeyid'
+                                  &authkeyid, sizeof(struct sctp_authkeyid));
+                                                     ^
+bss_dgram.c:1495:27: warning: unused variable 'authkeyid' [-Wunused-variable]
+     struct sctp_authkeyid authkeyid;
+                           ^
+bss_dgram.c: In function 'BIO_dgram_sctp_wait_for_dry':
+bss_dgram.c:1747:29: error: storage size of 'snp' isn't known
+     union sctp_notification snp;
+                             ^
+bss_dgram.c:1748:19: error: storage size of 'msg' isn't known
+     struct msghdr msg;
+                   ^
+bss_dgram.c:1749:18: error: storage size of 'iov' isn't known
+     struct iovec iov;
+                  ^
+bss_dgram.c:1753:33: error: storage size of 'event' isn't known
+     struct sctp_event_subscribe event;
+                                 ^
+bss_dgram.c:1768:24: error: invalid application of 'sizeof' to incomplete type 'struct sctp_event_subscribe'
+     eventsize = sizeof(struct sctp_event_subscribe);
+                        ^
+bss_dgram.c:1769:30: error: 'IPPROTO_SCTP' undeclared (first use in this function)
+     ret = getsockopt(b->num, IPPROTO_SCTP, SCTP_EVENTS, &event, &eventsize);
+                              ^
+bss_dgram.c:1769:44: error: 'SCTP_EVENTS' undeclared (first use in this function)
+     ret = getsockopt(b->num, IPPROTO_SCTP, SCTP_EVENTS, &event, &eventsize);
+                                            ^
+bss_dgram.c:1777:27: error: invalid application of 'sizeof' to incomplete type 'struct sctp_event_subscribe'
+                    sizeof(struct sctp_event_subscribe));
+                           ^
+bss_dgram.c:1783:31: error: invalid application of 'sizeof' to incomplete type 'union sctp_notification'
+     memset(&snp, 0x00, sizeof(union sctp_notification));
+                               ^
+bss_dgram.c:1785:26: error: invalid application of 'sizeof' to incomplete type 'union sctp_notification'
+     iov.iov_len = sizeof(union sctp_notification);
+                          ^
+bss_dgram.c:1804:28: error: 'MSG_NOTIFICATION' undeclared (first use in this function)
+     while (msg.msg_flags & MSG_NOTIFICATION) {
+                            ^
+bss_dgram.c:1805:35: error: invalid application of 'sizeof' to incomplete type 'union sctp_notification'
+         memset(&snp, 0x00, sizeof(union sctp_notification));
+                                   ^
+bss_dgram.c:1807:30: error: invalid application of 'sizeof' to incomplete type 'union sctp_notification'
+         iov.iov_len = sizeof(union sctp_notification);
+                              ^
+bss_dgram.c:1825:38: error: 'SCTP_SENDER_DRY_EVENT' undeclared (first use in this function)
+         if (snp.sn_header.sn_type == SCTP_SENDER_DRY_EVENT) {
+                                      ^
+bss_dgram.c:1838:44: error: invalid application of 'sizeof' to incomplete type 'struct sctp_event_subscribe'
+             eventsize = (socklen_t) sizeof(struct sctp_event_subscribe);
+                                            ^
+bss_dgram.c:1849:35: error: invalid application of 'sizeof' to incomplete type 'struct sctp_event_subscribe'
+                            sizeof(struct sctp_event_subscribe));
+                                   ^
+bss_dgram.c:1864:35: error: invalid application of 'sizeof' to incomplete type 'union sctp_notification'
+         memset(&snp, 0x00, sizeof(union sctp_notification));
+                                   ^
+bss_dgram.c:1866:30: error: invalid application of 'sizeof' to incomplete type 'union sctp_notification'
+         iov.iov_len = sizeof(union sctp_notification);
+                              ^
+bss_dgram.c:1877:13: warning: implicit declaration of function 'fcntl' [-Wimplicit-function-declaration]
+             sockflags = fcntl(b->num, F_GETFL, 0);
+             ^
+bss_dgram.c:1877:39: error: 'F_GETFL' undeclared (first use in this function)
+             sockflags = fcntl(b->num, F_GETFL, 0);
+                                       ^
+bss_dgram.c:1878:27: error: 'F_SETFL' undeclared (first use in this function)
+             fcntl(b->num, F_SETFL, O_NONBLOCK);
+                           ^
+bss_dgram.c:1878:36: error: 'O_NONBLOCK' undeclared (first use in this function)
+             fcntl(b->num, F_SETFL, O_NONBLOCK);
+                                    ^
+bss_dgram.c:1753:33: warning: unused variable 'event' [-Wunused-variable]
+     struct sctp_event_subscribe event;
+                                 ^
+bss_dgram.c:1749:18: warning: unused variable 'iov' [-Wunused-variable]
+     struct iovec iov;
+                  ^
+bss_dgram.c:1748:19: warning: unused variable 'msg' [-Wunused-variable]
+     struct msghdr msg;
+                   ^
+bss_dgram.c:1747:29: warning: unused variable 'snp' [-Wunused-variable]
+     union sctp_notification snp;
+                             ^
+bss_dgram.c: In function 'BIO_dgram_sctp_msg_waiting':
+bss_dgram.c:1903:29: error: storage size of 'snp' isn't known
+     union sctp_notification snp;
+                             ^
+bss_dgram.c:1904:19: error: storage size of 'msg' isn't known
+     struct msghdr msg;
+                   ^
+bss_dgram.c:1905:18: error: storage size of 'iov' isn't known
+     struct iovec iov;
+                  ^
+bss_dgram.c:1910:35: error: invalid application of 'sizeof' to incomplete type 'union sctp_notification'
+         memset(&snp, 0x00, sizeof(union sctp_notification));
+                                   ^
+bss_dgram.c:1912:30: error: invalid application of 'sizeof' to incomplete type 'union sctp_notification'
+         iov.iov_len = sizeof(union sctp_notification);
+                              ^
+bss_dgram.c:1921:35: error: 'F_GETFL' undeclared (first use in this function)
+         sockflags = fcntl(b->num, F_GETFL, 0);
+                                   ^
+bss_dgram.c:1922:23: error: 'F_SETFL' undeclared (first use in this function)
+         fcntl(b->num, F_SETFL, O_NONBLOCK);
+                       ^
+bss_dgram.c:1922:32: error: 'O_NONBLOCK' undeclared (first use in this function)
+         fcntl(b->num, F_SETFL, O_NONBLOCK);
+                                ^
+bss_dgram.c:1927:39: error: 'MSG_NOTIFICATION' undeclared (first use in this function)
+         if (n > 0 && (msg.msg_flags & MSG_NOTIFICATION)) {
+                                       ^
+bss_dgram.c:1933:39: error: invalid application of 'sizeof' to incomplete type 'union sctp_notification'
+             memset(&snp, 0x00, sizeof(union sctp_notification));
+                                       ^
+bss_dgram.c:1935:34: error: invalid application of 'sizeof' to incomplete type 'union sctp_notification'
+             iov.iov_len = sizeof(union sctp_notification);
+                                  ^
+bss_dgram.c:1905:18: warning: unused variable 'iov' [-Wunused-variable]
+     struct iovec iov;
+                  ^
+bss_dgram.c:1904:19: warning: unused variable 'msg' [-Wunused-variable]
+     struct msghdr msg;
+                   ^
+bss_dgram.c:1903:29: warning: unused variable 'snp' [-Wunused-variable]
+     union sctp_notification snp;
+                             ^
+make[2]: *** [bss_dgram.o] Error 1
+make[1]: *** [subdirs] Error 1
+make: *** [build_crypto] Error 1

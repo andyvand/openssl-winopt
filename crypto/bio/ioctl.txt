@@ -1,0 +1,678 @@
+\MinGW\include/ddk/batclass.h:#define IOCTL_BATTERY_QUERY_TAG \
+\MinGW\include/ddk/batclass.h:#define IOCTL_BATTERY_QUERY_INFORMATION \
+\MinGW\include/ddk/batclass.h:#define IOCTL_BATTERY_SET_INFORMATION \
+\MinGW\include/ddk/batclass.h:#define IOCTL_BATTERY_QUERY_STATUS \
+\MinGW\include/ddk/batclass.h:BatteryClassIoctl(
+\MinGW\include/ddk/d4drvif.h: * DOT4 driver IOCTL interface
+\MinGW\include/ddk/d4drvif.h:#define IOCTL_DOT4_USER_BASE              2049
+\MinGW\include/ddk/d4drvif.h:#define IOCTL_DOT4_ADD_ACTIVITY_BROADCAST \
+\MinGW\include/ddk/d4drvif.h:  CTL_CODE(FILE_DEVICE_DOT4, IOCTL_DOT4_USER_BASE + 4, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/d4drvif.h:#define IOCTL_DOT4_CLOSE_CHANNEL \
+\MinGW\include/ddk/d4drvif.h:  CTL_CODE(FILE_DEVICE_DOT4, IOCTL_DOT4_USER_BASE + 1, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/d4drvif.h:#define IOCTL_DOT4_CREATE_SOCKET \
+\MinGW\include/ddk/d4drvif.h:  CTL_CODE(FILE_DEVICE_DOT4, IOCTL_DOT4_USER_BASE + 7, METHOD_OUT_DIRECT, FILE_ANY_ACCESS)
+\MinGW\include/ddk/d4drvif.h:#define IOCTL_DOT4_DESTROY_SOCKET \
+\MinGW\include/ddk/d4drvif.h:  CTL_CODE(FILE_DEVICE_DOT4, IOCTL_DOT4_USER_BASE + 9, METHOD_OUT_DIRECT, FILE_ANY_ACCESS)
+\MinGW\include/ddk/d4drvif.h:#define IOCTL_DOT4_OPEN_CHANNEL \
+\MinGW\include/ddk/d4drvif.h:  CTL_CODE(FILE_DEVICE_DOT4, IOCTL_DOT4_USER_BASE + 0, METHOD_OUT_DIRECT, FILE_ANY_ACCESS)
+\MinGW\include/ddk/d4drvif.h:#define IOCTL_DOT4_READ \
+\MinGW\include/ddk/d4drvif.h:  CTL_CODE(FILE_DEVICE_DOT4, IOCTL_DOT4_USER_BASE + 2, METHOD_OUT_DIRECT, FILE_ANY_ACCESS)
+\MinGW\include/ddk/d4drvif.h:#define IOCTL_DOT4_REMOVE_ACTIVITY_BROADCAST \
+\MinGW\include/ddk/d4drvif.h:  CTL_CODE(FILE_DEVICE_DOT4, IOCTL_DOT4_USER_BASE + 5, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/d4drvif.h:#define IOCTL_DOT4_WAIT_ACTIVITY_BROADCAST \
+\MinGW\include/ddk/d4drvif.h:  CTL_CODE(FILE_DEVICE_DOT4, IOCTL_DOT4_USER_BASE + 6, METHOD_OUT_DIRECT, FILE_ANY_ACCESS)
+\MinGW\include/ddk/d4drvif.h:#define IOCTL_DOT4_WAIT_FOR_CHANNEL \
+\MinGW\include/ddk/d4drvif.h:  CTL_CODE(FILE_DEVICE_DOT4, IOCTL_DOT4_USER_BASE + 8, METHOD_OUT_DIRECT, FILE_ANY_ACCESS)
+\MinGW\include/ddk/d4drvif.h:#define IOCTL_DOT4_WRITE \
+\MinGW\include/ddk/d4drvif.h:  CTL_CODE(FILE_DEVICE_DOT4, IOCTL_DOT4_USER_BASE + 3, METHOD_IN_DIRECT, FILE_ANY_ACCESS)
+\MinGW\include/ddk/hidclass.h:#define IOCTL_GET_PHYSICAL_DESCRIPTOR         HID_OUT_CTL_CODE(102)
+\MinGW\include/ddk/hidclass.h:#define IOCTL_HID_FLUSH_QUEUE                 HID_CTL_CODE(101)
+\MinGW\include/ddk/hidclass.h:#define IOCTL_HID_GET_COLLECTION_DESCRIPTOR   HID_CTL_CODE(100)
+\MinGW\include/ddk/hidclass.h:#define IOCTL_HID_GET_COLLECTION_INFORMATION  HID_BUFFER_CTL_CODE(106)
+\MinGW\include/ddk/hidclass.h:#define IOCTL_HID_GET_FEATURE                 HID_OUT_CTL_CODE(100)
+\MinGW\include/ddk/hidclass.h:#define IOCTL_HID_GET_HARDWARE_ID             HID_OUT_CTL_CODE(103)
+\MinGW\include/ddk/hidclass.h:#define IOCTL_HID_GET_INDEXED_STRING          HID_OUT_CTL_CODE(120)
+\MinGW\include/ddk/hidclass.h:#define IOCTL_HID_GET_INPUT_REPORT            HID_OUT_CTL_CODE(104)
+\MinGW\include/ddk/hidclass.h:#define IOCTL_HID_GET_MANUFACTURER_STRING     HID_OUT_CTL_CODE(110)
+\MinGW\include/ddk/hidclass.h:#define IOCTL_GET_NUM_DEVICE_INPUT_BUFFERS    HID_BUFFER_CTL_CODE(104)
+\MinGW\include/ddk/hidclass.h:#define IOCTL_HID_GET_POLL_FREQUENCY_MSEC     HID_BUFFER_CTL_CODE(102)
+\MinGW\include/ddk/hidclass.h:#define IOCTL_HID_GET_PRODUCT_STRING          HID_OUT_CTL_CODE(111)
+\MinGW\include/ddk/hidclass.h:#define IOCTL_HID_GET_SERIALNUMBER_STRING     HID_OUT_CTL_CODE(112)
+\MinGW\include/ddk/hidclass.h:#define IOCTL_HID_SET_FEATURE                 HID_IN_CTL_CODE(100)
+\MinGW\include/ddk/hidclass.h:#define IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS    HID_BUFFER_CTL_CODE(105)
+\MinGW\include/ddk/hidclass.h:#define IOCTL_HID_SET_OUTPUT_REPORT           HID_IN_CTL_CODE(101)
+\MinGW\include/ddk/hidclass.h:#define IOCTL_HID_SET_POLL_FREQUENCY_MSEC     HID_BUFFER_CTL_CODE(103)
+\MinGW\include/ddk/hidclass.h:#define IOCTL_HID_GET_DRIVER_CONFIG           HID_BUFFER_CTL_CODE(100)
+\MinGW\include/ddk/hidclass.h:#define IOCTL_HID_SET_DRIVER_CONFIG           HID_BUFFER_CTL_CODE(101)
+\MinGW\include/ddk/hidclass.h:#define IOCTL_HID_GET_MS_GENRE_DESCRIPTOR     HID_OUT_CTL_CODE(121)
+\MinGW\include/ddk/kbdmou.h:#define IOCTL_INTERNAL_KEYBOARD_CONNECT \
+\MinGW\include/ddk/kbdmou.h:#define IOCTL_INTERNAL_KEYBOARD_DISCONNECT \
+\MinGW\include/ddk/kbdmou.h:#define IOCTL_INTERNAL_KEYBOARD_ENABLE \
+\MinGW\include/ddk/kbdmou.h:#define IOCTL_INTERNAL_KEYBOARD_DISABLE \
+\MinGW\include/ddk/kbdmou.h:#define IOCTL_INTERNAL_MOUSE_CONNECT \
+\MinGW\include/ddk/kbdmou.h:#define IOCTL_INTERNAL_MOUSE_DISCONNECT \
+\MinGW\include/ddk/kbdmou.h:#define IOCTL_INTERNAL_MOUSE_ENABLE \
+\MinGW\include/ddk/kbdmou.h:#define IOCTL_INTERNAL_MOUSE_DISABLE \
+\MinGW\include/ddk/mountdev.h:#define IOCTL_MOUNTDEV_QUERY_DEVICE_NAME \
+\MinGW\include/ddk/mountdev.h:#define IOCTL_MOUNTDEV_QUERY_UNIQUE_ID \
+\MinGW\include/ddk/mountdev.h:#define IOCTL_MOUNTDEV_UNIQUE_ID_CHANGE_NOTIFY \
+\MinGW\include/ddk/mountdev.h:#define IOCTL_MOUNTDEV_QUERY_SUGGESTED_LINK_NAME \
+\MinGW\include/ddk/mountdev.h:#define IOCTL_MOUNTDEV_LINK_CREATED \
+\MinGW\include/ddk/mountdev.h:#define IOCTL_MOUNTDEV_LINK_DELETED \
+\MinGW\include/ddk/mountmgr.h:#define IOCTL_MOUNTMGR_CREATE_POINT \
+\MinGW\include/ddk/mountmgr.h:#define IOCTL_MOUNTMGR_QUERY_POINTS \
+\MinGW\include/ddk/mountmgr.h:#define IOCTL_MOUNTMGR_DELETE_POINTS \
+\MinGW\include/ddk/mountmgr.h:#define IOCTL_MOUNTMGR_DELETE_POINTS_DBONLY \
+\MinGW\include/ddk/mountmgr.h:#define IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER \
+\MinGW\include/ddk/mountmgr.h:#define IOCTL_MOUNTMGR_AUTO_DL_ASSIGNMENTS \
+\MinGW\include/ddk/mountmgr.h:#define IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_CREATED \
+\MinGW\include/ddk/mountmgr.h:#define IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_DELETED \
+\MinGW\include/ddk/mountmgr.h:#define IOCTL_MOUNTMGR_CHANGE_NOTIFY \
+\MinGW\include/ddk/mountmgr.h:#define IOCTL_MOUNTMGR_KEEP_LINKS_WHEN_OFFLINE \
+\MinGW\include/ddk/mountmgr.h:#define IOCTL_MOUNTMGR_CHECK_UNPROCESSED_VOLUMES \
+\MinGW\include/ddk/mountmgr.h:#define IOCTL_MOUNTMGR_VOLUME_ARRIVAL_NOTIFICATION \
+\MinGW\include/ddk/ntdd8042.h: * i8042 IOCTL interface.
+\MinGW\include/ddk/ntdd8042.h:#define IOCTL_INTERNAL_I8042_CONTROLLER_WRITE_BUFFER \
+\MinGW\include/ddk/ntdd8042.h:#define IOCTL_INTERNAL_I8042_HOOK_KEYBOARD \
+\MinGW\include/ddk/ntdd8042.h:#define IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION \
+\MinGW\include/ddk/ntdd8042.h:#define IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER \
+\MinGW\include/ddk/ntdd8042.h:#define IOCTL_INTERNAL_I8042_HOOK_MOUSE \
+\MinGW\include/ddk/ntdd8042.h:#define IOCTL_INTERNAL_I8042_MOUSE_START_INFORMATION \
+\MinGW\include/ddk/ntdd8042.h:#define IOCTL_INTERNAL_I8042_MOUSE_WRITE_BUFFER \
+\MinGW\include/ddk/ntddbeep.h: * Beep device IOCTL interface
+\MinGW\include/ddk/ntddbeep.h:#define IOCTL_BEEP_SET \
+\MinGW\include/ddk/ntddcdrm.h: * CDROM IOCTL interface.
+\MinGW\include/ddk/ntddcdrm.h:#define IOCTL_CDROM_BASE                  FILE_DEVICE_CD_ROM
+\MinGW\include/ddk/ntddcdrm.h:#define IOCTL_CDROM_CHECK_VERIFY \
+\MinGW\include/ddk/ntddcdrm.h:  CTL_CODE(IOCTL_CDROM_BASE, 0x0200, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddcdrm.h:#define IOCTL_CDROM_FIND_NEW_DEVICES \
+\MinGW\include/ddk/ntddcdrm.h:  CTL_CODE(IOCTL_CDROM_BASE, 0x0206, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddcdrm.h:#define IOCTL_CDROM_GET_CONTROL \
+\MinGW\include/ddk/ntddcdrm.h:  CTL_CODE(IOCTL_CDROM_BASE, 0x000D, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddcdrm.h:#define IOCTL_CDROM_GET_DRIVE_GEOMETRY \
+\MinGW\include/ddk/ntddcdrm.h:  CTL_CODE(IOCTL_CDROM_BASE, 0x0013, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddcdrm.h:#define IOCTL_CDROM_GET_LAST_SESSION \
+\MinGW\include/ddk/ntddcdrm.h:  CTL_CODE(IOCTL_CDROM_BASE, 0x000E, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddcdrm.h:#define IOCTL_CDROM_GET_VOLUME \
+\MinGW\include/ddk/ntddcdrm.h:  CTL_CODE(IOCTL_CDROM_BASE, 0x0005, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddcdrm.h:#define IOCTL_CDROM_PAUSE_AUDIO \
+\MinGW\include/ddk/ntddcdrm.h:  CTL_CODE(IOCTL_CDROM_BASE, 0x0003, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddcdrm.h:#define IOCTL_CDROM_PLAY_AUDIO_MSF \
+\MinGW\include/ddk/ntddcdrm.h:  CTL_CODE(IOCTL_CDROM_BASE, 0x0006, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddcdrm.h:#define IOCTL_CDROM_RAW_READ \
+\MinGW\include/ddk/ntddcdrm.h:  CTL_CODE(IOCTL_CDROM_BASE, 0x000F, METHOD_OUT_DIRECT,  FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddcdrm.h:#define IOCTL_CDROM_READ_Q_CHANNEL \
+\MinGW\include/ddk/ntddcdrm.h:  CTL_CODE(IOCTL_CDROM_BASE, 0x000B, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddcdrm.h:#define IOCTL_CDROM_READ_TOC \
+\MinGW\include/ddk/ntddcdrm.h:  CTL_CODE(IOCTL_CDROM_BASE, 0x0000, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddcdrm.h:#define IOCTL_CDROM_READ_TOC_EX \
+\MinGW\include/ddk/ntddcdrm.h:  CTL_CODE(IOCTL_CDROM_BASE, 0x0015, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddcdrm.h:#define IOCTL_CDROM_RESUME_AUDIO \
+\MinGW\include/ddk/ntddcdrm.h:  CTL_CODE(IOCTL_CDROM_BASE, 0x0004, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddcdrm.h:#define IOCTL_CDROM_SEEK_AUDIO_MSF \
+\MinGW\include/ddk/ntddcdrm.h:  CTL_CODE(IOCTL_CDROM_BASE, 0x0001, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddcdrm.h:#define IOCTL_CDROM_SET_VOLUME \
+\MinGW\include/ddk/ntddcdrm.h:  CTL_CODE(IOCTL_CDROM_BASE, 0x000A, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddcdrm.h:#define IOCTL_CDROM_SIMBAD \
+\MinGW\include/ddk/ntddcdrm.h:  CTL_CODE(IOCTL_CDROM_BASE, 0x1003, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddcdrm.h:#define IOCTL_CDROM_STOP_AUDIO \
+\MinGW\include/ddk/ntddcdrm.h:  CTL_CODE(IOCTL_CDROM_BASE, 0x0002, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddcdrm.h:#define IOCTL_CDROM_SUB_Q_CHANNEL         0x00
+\MinGW\include/ddk/ntddcdrm.h:#define IOCTL_CDROM_CURRENT_POSITION      0x01
+\MinGW\include/ddk/ntddcdrm.h:#define IOCTL_CDROM_MEDIA_CATALOG         0x02
+\MinGW\include/ddk/ntddcdrm.h:#define IOCTL_CDROM_TRACK_ISRC            0x03
+\MinGW\include/ddk/ntddcdvd.h: * DVD IOCTL interface.
+\MinGW\include/ddk/ntddcdvd.h:#define IOCTL_DVD_BASE                    FILE_DEVICE_DVD
+\MinGW\include/ddk/ntddcdvd.h:#define IOCTL_DVD_END_SESSION \
+\MinGW\include/ddk/ntddcdvd.h:  CTL_CODE(IOCTL_DVD_BASE, 0x0403, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddcdvd.h:#define IOCTL_DVD_GET_REGION \
+\MinGW\include/ddk/ntddcdvd.h:  CTL_CODE(IOCTL_DVD_BASE, 0x0405, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddcdvd.h:#define IOCTL_DVD_READ_KEY \
+\MinGW\include/ddk/ntddcdvd.h:  CTL_CODE(IOCTL_DVD_BASE, 0x0401, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddcdvd.h:#define IOCTL_DVD_READ_STRUCTURE \
+\MinGW\include/ddk/ntddcdvd.h:  CTL_CODE(IOCTL_DVD_BASE, 0x0450, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddcdvd.h:#define IOCTL_DVD_SEND_KEY \
+\MinGW\include/ddk/ntddcdvd.h:  CTL_CODE(IOCTL_DVD_BASE, 0x0402, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddcdvd.h:#define IOCTL_DVD_START_SESSION \
+\MinGW\include/ddk/ntddcdvd.h:  CTL_CODE(IOCTL_DVD_BASE, 0x0400, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddcdvd.h:#define IOCTL_DVD_SET_READ_AHEAD \
+\MinGW\include/ddk/ntddcdvd.h:  CTL_CODE(IOCTL_DVD_BASE, 0x0404, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddchgr.h: * Media changer IOCTL interface.
+\MinGW\include/ddk/ntddchgr.h:#define IOCTL_CHANGER_BASE                FILE_DEVICE_CHANGER
+\MinGW\include/ddk/ntddchgr.h:#define IOCTL_CHANGER_EXCHANGE_MEDIUM  \
+\MinGW\include/ddk/ntddchgr.h:  CTL_CODE(IOCTL_CHANGER_BASE, 0x0008, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddchgr.h:#define IOCTL_CHANGER_GET_ELEMENT_STATUS \
+\MinGW\include/ddk/ntddchgr.h:  CTL_CODE(IOCTL_CHANGER_BASE, 0x0005, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntddchgr.h:#define IOCTL_CHANGER_GET_PARAMETERS \
+\MinGW\include/ddk/ntddchgr.h:  CTL_CODE(IOCTL_CHANGER_BASE, 0x0000, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddchgr.h:#define IOCTL_CHANGER_GET_PRODUCT_DATA \
+\MinGW\include/ddk/ntddchgr.h:  CTL_CODE(IOCTL_CHANGER_BASE, 0x0002, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddchgr.h:#define IOCTL_CHANGER_GET_STATUS \
+\MinGW\include/ddk/ntddchgr.h:  CTL_CODE(IOCTL_CHANGER_BASE, 0x0001, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddchgr.h:#define IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS \
+\MinGW\include/ddk/ntddchgr.h:  CTL_CODE(IOCTL_CHANGER_BASE, 0x0006, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddchgr.h:#define IOCTL_CHANGER_MOVE_MEDIUM \
+\MinGW\include/ddk/ntddchgr.h:  CTL_CODE(IOCTL_CHANGER_BASE, 0x0009, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddchgr.h:#define IOCTL_CHANGER_QUERY_VOLUME_TAGS \
+\MinGW\include/ddk/ntddchgr.h:  CTL_CODE(IOCTL_CHANGER_BASE, 0x000B, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntddchgr.h:#define IOCTL_CHANGER_REINITIALIZE_TRANSPORT \
+\MinGW\include/ddk/ntddchgr.h:  CTL_CODE(IOCTL_CHANGER_BASE, 0x000A, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddchgr.h:#define IOCTL_CHANGER_SET_ACCESS \
+\MinGW\include/ddk/ntddchgr.h:  CTL_CODE(IOCTL_CHANGER_BASE, 0x0004, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntddchgr.h:#define IOCTL_CHANGER_SET_POSITION \
+\MinGW\include/ddk/ntddchgr.h:  CTL_CODE(IOCTL_CHANGER_BASE, 0x0007, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntdddisk.h: * Disk IOCTL interface.
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_BASE                   FILE_DEVICE_DISK
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_CHECK_VERIFY \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0200, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_CONTROLLER_NUMBER \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0011, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_CREATE_DISK \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0016, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_DELETE_DRIVE_LAYOUT \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0040, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_FIND_NEW_DEVICES \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0206, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_FORMAT_TRACKS \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0006, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_FORMAT_TRACKS_EX \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x000b, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_GET_CACHE_INFORMATION \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0035, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_GET_DRIVE_GEOMETRY \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0000, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_GET_DRIVE_GEOMETRY_EX \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0028, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_GET_DRIVE_LAYOUT \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0003, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_GET_DRIVE_LAYOUT_EX \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0014, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_GET_MEDIA_TYPES \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0300, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_GET_LENGTH_INFO \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0017, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_GET_PARTITION_INFO \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0001, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_GET_PARTITION_INFO_EX \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0012, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_GROW_PARTITION \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0034, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_INTERNAL_CLEAR_VERIFY \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0101, METHOD_NEITHER, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_INTERNAL_SET_VERIFY \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0100, METHOD_NEITHER, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_IS_WRITABLE \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0009, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_PERFORMANCE \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0008, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_PERFORMANCE_OFF \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0018, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_REASSIGN_BLOCKS \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0007, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_RESERVE \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0204, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_SET_CACHE_INFORMATION \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0036, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_SET_DRIVE_LAYOUT \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0004, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_SET_DRIVE_LAYOUT_EX \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0015, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_SET_PARTITION_INFO \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0002, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_SET_PARTITION_INFO_EX \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0013, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_UPDATE_DRIVE_SIZE \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0032, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define IOCTL_DISK_VERIFY \
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0005, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0020, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0022, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:  CTL_CODE(IOCTL_DISK_BASE, 0x0021, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntdddisk.h:#define SMART_INVALID_IOCTL               6
+\MinGW\include/ddk/ntddkbd.h: * Keyboard IOCTL interface
+\MinGW\include/ddk/ntddkbd.h:#define IOCTL_KEYBOARD_QUERY_ATTRIBUTES \
+\MinGW\include/ddk/ntddkbd.h:#define IOCTL_KEYBOARD_QUERY_INDICATORS \
+\MinGW\include/ddk/ntddkbd.h:#define IOCTL_KEYBOARD_QUERY_INDICATOR_TRANSLATION \
+\MinGW\include/ddk/ntddkbd.h:#define IOCTL_KEYBOARD_QUERY_TYPEMATIC \
+\MinGW\include/ddk/ntddkbd.h:#define IOCTL_KEYBOARD_SET_TYPEMATIC \
+\MinGW\include/ddk/ntddkbd.h:#define IOCTL_KEYBOARD_SET_INDICATORS \
+\MinGW\include/ddk/ntddmou.h: * Mouse device IOCTL interface.
+\MinGW\include/ddk/ntddmou.h:#define IOCTL_MOUSE_QUERY_ATTRIBUTES \
+\MinGW\include/ddk/ntddpar.h:#define IOCTL_IEEE1284_GET_MODE \
+\MinGW\include/ddk/ntddpar.h:#define IOCTL_IEEE1284_NEGOTIATE \
+\MinGW\include/ddk/ntddpar.h:#define IOCTL_PAR_GET_DEFAULT_MODES \
+\MinGW\include/ddk/ntddpar.h:#define IOCTL_PAR_GET_DEVICE_CAPS \
+\MinGW\include/ddk/ntddpar.h:#define IOCTL_PAR_IS_PORT_FREE \
+\MinGW\include/ddk/ntddpar.h:#define IOCTL_PAR_QUERY_DEVICE_ID \
+\MinGW\include/ddk/ntddpar.h:#define IOCTL_PAR_QUERY_DEVICE_ID_SIZE \
+\MinGW\include/ddk/ntddpar.h:#define IOCTL_PAR_QUERY_INFORMATION \
+\MinGW\include/ddk/ntddpar.h:#define IOCTL_PAR_QUERY_LOCATION \
+\MinGW\include/ddk/ntddpar.h:#define IOCTL_PAR_QUERY_RAW_DEVICE_ID \
+\MinGW\include/ddk/ntddpar.h:#define IOCTL_PAR_SET_INFORMATION \
+\MinGW\include/ddk/ntddpar.h:#define IOCTL_PAR_SET_READ_ADDRESS \
+\MinGW\include/ddk/ntddpar.h:#define IOCTL_PAR_SET_WRITE_ADDRESS \
+\MinGW\include/ddk/ntddpcm.h: * PCMCIA IOCTL interface
+\MinGW\include/ddk/ntddpcm.h:#define IOCTL_PCMCIA_BASE                 FILE_DEVICE_CONTROLLER
+\MinGW\include/ddk/ntddpcm.h:#define IOCTL_GET_TUPLE_DATA \
+\MinGW\include/ddk/ntddpcm.h:  CTL_CODE(IOCTL_PCMCIA_BASE, 3000, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddpcm.h:#define IOCTL_SOCKET_INFORMATION \
+\MinGW\include/ddk/ntddpcm.h:  CTL_CODE(IOCTL_PCMCIA_BASE, 3004, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddscsi.h: * SCSI port IOCTL interface.
+\MinGW\include/ddk/ntddscsi.h:#define IOCTL_SCSI_BASE                   FILE_DEVICE_CONTROLLER
+\MinGW\include/ddk/ntddscsi.h:#define IOCTL_SCSI_GET_INQUIRY_DATA \
+\MinGW\include/ddk/ntddscsi.h:  CTL_CODE(IOCTL_SCSI_BASE, 0x0403, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddscsi.h:#define IOCTL_SCSI_GET_CAPABILITIES \
+\MinGW\include/ddk/ntddscsi.h:  CTL_CODE(IOCTL_SCSI_BASE, 0x0404, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddscsi.h:#define IOCTL_SCSI_GET_ADDRESS \
+\MinGW\include/ddk/ntddscsi.h:  CTL_CODE(IOCTL_SCSI_BASE, 0x0406, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddscsi.h:#define IOCTL_SCSI_MINIPORT \
+\MinGW\include/ddk/ntddscsi.h:  CTL_CODE(IOCTL_SCSI_BASE, 0x0402, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntddscsi.h:#define IOCTL_SCSI_PASS_THROUGH \
+\MinGW\include/ddk/ntddscsi.h:  CTL_CODE(IOCTL_SCSI_BASE, 0x0401, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntddscsi.h:#define IOCTL_SCSI_PASS_THROUGH_DIRECT \
+\MinGW\include/ddk/ntddscsi.h:  CTL_CODE(IOCTL_SCSI_BASE, 0x0405, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntddscsi.h:#define IOCTL_SCSI_RESCAN_BUS \
+\MinGW\include/ddk/ntddscsi.h:  CTL_CODE(IOCTL_SCSI_BASE, 0x0407, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddscsi.h:#define SCSI_IOCTL_DATA_OUT               0
+\MinGW\include/ddk/ntddscsi.h:#define SCSI_IOCTL_DATA_IN                1
+\MinGW\include/ddk/ntddscsi.h:#define SCSI_IOCTL_DATA_UNSPECIFIED       2
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_CLEAR_STATS \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_CLR_DTR \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_CLR_RTS \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_CONFIG_SIZE \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_GET_BAUD_RATE \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_GET_CHARS \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_GET_COMMSTATUS \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_GET_DTRRTS \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_GET_HANDFLOW \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_GET_LINE_CONTROL \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_GET_MODEM_CONTROL \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_GET_MODEMSTATUS \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_GET_PROPERTIES \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_GET_STATS \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_GET_TIMEOUTS \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_GET_WAIT_MASK \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_IMMEDIATE_CHAR \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_LSRMST_INSERT \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_PURGE \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_RESET_DEVICE \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_SET_BAUD_RATE \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_SET_BREAK_ON \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_SET_BREAK_OFF \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_SET_CHARS \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_SET_DTR \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_SET_FIFO_CONTROL \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_SET_HANDFLOW \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_SET_LINE_CONTROL \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_SET_MODEM_CONTROL \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_SET_QUEUE_SIZE \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_SET_RTS \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_SET_TIMEOUTS \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_SET_WAIT_MASK \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_SET_XOFF \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_SET_XON \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_WAIT_ON_MASK \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_XOFF_COUNTER \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_INTERNAL_BASIC_SETTINGS \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_INTERNAL_CANCEL_WAIT_WAKE \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_INTERNAL_DO_WAIT_WAKE \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERIAL_INTERNAL_RESTORE_SETTINGS \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERENUM_PORT_DESC \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_SERENUM_GET_PORT_NAME \
+\MinGW\include/ddk/ntddser.h:#define IOCTL_INTERNAL_SERENUM_REMOVE_SELF \
+\MinGW\include/ddk/ntddser.h:/* IOCTL_SERIAL_(GET_MODEM_CONTROL, SET_MODEM_CONTROL) flags */
+\MinGW\include/ddk/ntddser.h:/* IOCTL_SERIAL_(GET_WAIT_MASK, SET_WAIT_MASK, WAIT_ON_MASK) flags */
+\MinGW\include/ddk/ntddser.h:/* IOCTL_SERIAL_LSRMST_INSERT constants */
+\MinGW\include/ddk/ntddser.h:/* IOCTL_SERIAL_PURGE constants */
+\MinGW\include/ddk/ntddser.h:/* IOCTL_SERIAL_SET_FIFO_CONTROL constants */
+\MinGW\include/ddk/ntddstor.h: * Storage class IOCTL interface.
+\MinGW\include/ddk/ntddstor.h:#define IOCTL_STORAGE_BASE                FILE_DEVICE_MASS_STORAGE
+\MinGW\include/ddk/ntddstor.h:#define IOCTL_STORAGE_CHECK_VERIFY \
+\MinGW\include/ddk/ntddstor.h:  CTL_CODE(IOCTL_STORAGE_BASE, 0x0200, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddstor.h:#define IOCTL_STORAGE_CHECK_VERIFY2 \
+\MinGW\include/ddk/ntddstor.h:  CTL_CODE(IOCTL_STORAGE_BASE, 0x0200, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddstor.h:#define IOCTL_STORAGE_EJECT_MEDIA \
+\MinGW\include/ddk/ntddstor.h:  CTL_CODE(IOCTL_STORAGE_BASE, 0x0202, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddstor.h:#define IOCTL_STORAGE_EJECTION_CONTROL \
+\MinGW\include/ddk/ntddstor.h:  CTL_CODE(IOCTL_STORAGE_BASE, 0x0250, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddstor.h:#define IOCTL_STORAGE_FIND_NEW_DEVICES \
+\MinGW\include/ddk/ntddstor.h:  CTL_CODE(IOCTL_STORAGE_BASE, 0x0206, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddstor.h:#define IOCTL_STORAGE_GET_DEVICE_NUMBER \
+\MinGW\include/ddk/ntddstor.h:  CTL_CODE(IOCTL_STORAGE_BASE, 0x0420, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddstor.h:#define IOCTL_STORAGE_GET_MEDIA_SERIAL_NUMBER \
+\MinGW\include/ddk/ntddstor.h:  CTL_CODE(IOCTL_STORAGE_BASE, 0x0304, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddstor.h:#define IOCTL_STORAGE_GET_MEDIA_TYPES \
+\MinGW\include/ddk/ntddstor.h:  CTL_CODE(IOCTL_STORAGE_BASE, 0x0300, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddstor.h:#define IOCTL_STORAGE_GET_MEDIA_TYPES_EX \
+\MinGW\include/ddk/ntddstor.h:  CTL_CODE(IOCTL_STORAGE_BASE, 0x0301, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddstor.h:#define IOCTL_STORAGE_LOAD_MEDIA \
+\MinGW\include/ddk/ntddstor.h:  CTL_CODE(IOCTL_STORAGE_BASE, 0x0203, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddstor.h:#define IOCTL_STORAGE_LOAD_MEDIA2 \
+\MinGW\include/ddk/ntddstor.h:  CTL_CODE(IOCTL_STORAGE_BASE, 0x0203, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddstor.h:#define IOCTL_STORAGE_MCN_CONTROL \
+\MinGW\include/ddk/ntddstor.h:  CTL_CODE(IOCTL_STORAGE_BASE, 0x0251, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddstor.h:#define IOCTL_STORAGE_MEDIA_REMOVAL \
+\MinGW\include/ddk/ntddstor.h:  CTL_CODE(IOCTL_STORAGE_BASE, 0x0201, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddstor.h:#define IOCTL_STORAGE_PREDICT_FAILURE \
+\MinGW\include/ddk/ntddstor.h:  CTL_CODE(IOCTL_STORAGE_BASE, 0x0440, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddstor.h:#define IOCTL_STORAGE_QUERY_PROPERTY \
+\MinGW\include/ddk/ntddstor.h:  CTL_CODE(IOCTL_STORAGE_BASE, 0x0500, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddstor.h:#define IOCTL_STORAGE_RELEASE \
+\MinGW\include/ddk/ntddstor.h:  CTL_CODE(IOCTL_STORAGE_BASE, 0x0205, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddstor.h:#define IOCTL_STORAGE_RESERVE \
+\MinGW\include/ddk/ntddstor.h:  CTL_CODE(IOCTL_STORAGE_BASE, 0x0204, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddstor.h:#define IOCTL_STORAGE_RESET_BUS \
+\MinGW\include/ddk/ntddstor.h:  CTL_CODE(IOCTL_STORAGE_BASE, 0x0400, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntddstor.h:#define IOCTL_STORAGE_RESET_DEVICE \
+\MinGW\include/ddk/ntddstor.h:  CTL_CODE(IOCTL_STORAGE_BASE, 0x0401, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntddtape.h: * Tape device IOCTL interface.
+\MinGW\include/ddk/ntddtape.h:#define IOCTL_TAPE_BASE                   FILE_DEVICE_TAPE
+\MinGW\include/ddk/ntddtape.h:#define IOCTL_TAPE_CHECK_VERIFY         CTL_CODE(IOCTL_TAPE_BASE, 0x0200, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddtape.h:#define IOCTL_TAPE_CREATE_PARTITION     CTL_CODE(IOCTL_TAPE_BASE, 0x000a, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntddtape.h:#define IOCTL_TAPE_ERASE                CTL_CODE(IOCTL_TAPE_BASE, 0x0000, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntddtape.h:#define IOCTL_TAPE_FIND_NEW_DEVICES     CTL_CODE(IOCTL_DISK_BASE, 0x0206, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddtape.h:#define IOCTL_TAPE_GET_DRIVE_PARAMS     CTL_CODE(IOCTL_TAPE_BASE, 0x0005, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddtape.h:#define IOCTL_TAPE_GET_MEDIA_PARAMS     CTL_CODE(IOCTL_TAPE_BASE, 0x0007, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddtape.h:#define IOCTL_TAPE_GET_POSITION         CTL_CODE(IOCTL_TAPE_BASE, 0x0003, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddtape.h:#define IOCTL_TAPE_GET_STATUS           CTL_CODE(IOCTL_TAPE_BASE, 0x0009, METHOD_BUFFERED, FILE_READ_ACCESS )
+\MinGW\include/ddk/ntddtape.h:#define IOCTL_TAPE_PREPARE              CTL_CODE(IOCTL_TAPE_BASE, 0x0001, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddtape.h:#define IOCTL_TAPE_SET_DRIVE_PARAMS     CTL_CODE(IOCTL_TAPE_BASE, 0x0006, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntddtape.h:#define IOCTL_TAPE_SET_MEDIA_PARAMS     CTL_CODE(IOCTL_TAPE_BASE, 0x0008, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddtape.h:#define IOCTL_TAPE_SET_POSITION         CTL_CODE(IOCTL_TAPE_BASE, 0x0004, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddtape.h:#define IOCTL_TAPE_WRITE_MARKS          CTL_CODE(IOCTL_TAPE_BASE, 0x0002, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntddtdi.h: * TDI IOCTL interface
+\MinGW\include/ddk/ntddtdi.h:#define IOCTL_TDI_ACCEPT                  _TDI_CONTROL_CODE(0,  METHOD_BUFFERED)
+\MinGW\include/ddk/ntddtdi.h:#define IOCTL_TDI_CONNECT                 _TDI_CONTROL_CODE(1,  METHOD_BUFFERED)
+\MinGW\include/ddk/ntddtdi.h:#define IOCTL_TDI_DISCONNECT              _TDI_CONTROL_CODE(2,  METHOD_BUFFERED)
+\MinGW\include/ddk/ntddtdi.h:#define IOCTL_TDI_LISTEN                  _TDI_CONTROL_CODE(3,  METHOD_BUFFERED)
+\MinGW\include/ddk/ntddtdi.h:#define IOCTL_TDI_QUERY_INFORMATION       _TDI_CONTROL_CODE(4,  METHOD_OUT_DIRECT)
+\MinGW\include/ddk/ntddtdi.h:#define IOCTL_TDI_RECEIVE                 _TDI_CONTROL_CODE(5,  METHOD_OUT_DIRECT)
+\MinGW\include/ddk/ntddtdi.h:#define IOCTL_TDI_RECEIVE_DATAGRAM        _TDI_CONTROL_CODE(6,  METHOD_OUT_DIRECT)
+\MinGW\include/ddk/ntddtdi.h:#define IOCTL_TDI_SEND                    _TDI_CONTROL_CODE(7,  METHOD_IN_DIRECT)
+\MinGW\include/ddk/ntddtdi.h:#define IOCTL_TDI_SEND_DATAGRAM           _TDI_CONTROL_CODE(8,  METHOD_IN_DIRECT)
+\MinGW\include/ddk/ntddtdi.h:#define IOCTL_TDI_SET_EVENT_HANDLER       _TDI_CONTROL_CODE(9,  METHOD_BUFFERED)
+\MinGW\include/ddk/ntddtdi.h:#define IOCTL_TDI_SET_INFORMATION         _TDI_CONTROL_CODE(10, METHOD_IN_DIRECT)
+\MinGW\include/ddk/ntddtdi.h:#define IOCTL_TDI_ASSOCIATE_ADDRESS       _TDI_CONTROL_CODE(11, METHOD_BUFFERED)
+\MinGW\include/ddk/ntddtdi.h:#define IOCTL_TDI_DISASSOCIATE_ADDRESS    _TDI_CONTROL_CODE(12, METHOD_BUFFERED)
+\MinGW\include/ddk/ntddtdi.h:#define IOCTL_TDI_ACTION                  _TDI_CONTROL_CODE(13, METHOD_OUT_DIRECT)
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_DISABLE_CURSOR \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_DISABLE_POINTER \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_ENABLE_CURSOR \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_ENABLE_POINTER \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_FREE_PUBLIC_ACCESS_RANGES \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_GET_BANK_SELECT_CODE \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_GET_CHILD_STATE \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_GET_POWER_MANAGEMENT \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_HANDLE_VIDEOPARAMETERS \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_LOAD_AND_SET_FONT \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_MAP_VIDEO_MEMORY \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_QUERY_AVAIL_MODES \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_QUERY_COLOR_CAPABILITIES \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_QUERY_CURRENT_MODE \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_QUERY_CURSOR_ATTR \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_QUERY_CURSOR_POSITION \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_QUERY_NUM_AVAIL_MODES \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_QUERY_POINTER_ATTR \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_QUERY_POINTER_CAPABILITIES \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_QUERY_POINTER_POSITION \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_QUERY_PUBLIC_ACCESS_RANGES \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_RESET_DEVICE \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_RESTORE_HARDWARE_STATE \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_SAVE_HARDWARE_STATE \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_SET_CHILD_STATE_CONFIGURATION \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_SET_COLOR_REGISTERS \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_SET_CURRENT_MODE \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_SET_CURSOR_ATTR \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_SET_CURSOR_POSITION \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_SET_PALETTE_REGISTERS \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_SET_POINTER_ATTR \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_SET_POINTER_POSITION \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_SET_POWER_MANAGEMENT \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_SHARE_VIDEO_MEMORY \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_SWITCH_DUALVIEW \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_UNMAP_VIDEO_MEMORY \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_UNSHARE_VIDEO_MEMORY \
+\MinGW\include/ddk/ntddvdeo.h:#define IOCTL_VIDEO_VALIDATE_CHILD_STATE_CONFIGURATION \
+\MinGW\include/ddk/ntddvol.h: * Volume IOCTL interface.
+\MinGW\include/ddk/ntddvol.h:#define IOCTL_VOLUME_BASE                 ((ULONG) 'V')
+\MinGW\include/ddk/ntddvol.h:#define IOCTL_VOLUME_LOGICAL_TO_PHYSICAL \
+\MinGW\include/ddk/ntddvol.h:  CTL_CODE(IOCTL_VOLUME_BASE, 8, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddvol.h:#define IOCTL_VOLUME_PHYSICAL_TO_LOGICAL \
+\MinGW\include/ddk/ntddvol.h:  CTL_CODE(IOCTL_VOLUME_BASE, 9, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddvol.h:#define IOCTL_VOLUME_READ_PLEX \
+\MinGW\include/ddk/ntddvol.h:  CTL_CODE(IOCTL_VOLUME_BASE, 11, METHOD_OUT_DIRECT, FILE_READ_ACCESS)
+\MinGW\include/ddk/ntddvol.h:#define IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS \
+\MinGW\include/ddk/ntddvol.h:  CTL_CODE(IOCTL_VOLUME_BASE, 0, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddvol.h:#define IOCTL_VOLUME_IS_CLUSTERED \
+\MinGW\include/ddk/ntddvol.h:  CTL_CODE(IOCTL_VOLUME_BASE, 12, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddvol.h:#define IOCTL_VOLUME_QUERY_VOLUME_NUMBER \
+\MinGW\include/ddk/ntddvol.h:  CTL_CODE(IOCTL_VOLUME_BASE, 7, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddvol.h:#define IOCTL_VOLUME_IS_PARTITION \
+\MinGW\include/ddk/ntddvol.h:  CTL_CODE(IOCTL_VOLUME_BASE, 10, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddvol.h:#define IOCTL_VOLUME_SET_GPT_ATTRIBUTES \
+\MinGW\include/ddk/ntddvol.h:  CTL_CODE(IOCTL_VOLUME_BASE, 13, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddvol.h:#define IOCTL_VOLUME_GET_GPT_ATTRIBUTES \
+\MinGW\include/ddk/ntddvol.h:  CTL_CODE(IOCTL_VOLUME_BASE, 14, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddvol.h:#define IOCTL_VOLUME_SUPPORTS_ONLINE_OFFLINE \
+\MinGW\include/ddk/ntddvol.h:  CTL_CODE(IOCTL_VOLUME_BASE, 1, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddvol.h:#define IOCTL_VOLUME_ONLINE \
+\MinGW\include/ddk/ntddvol.h:  CTL_CODE(IOCTL_VOLUME_BASE, 2, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntddvol.h:#define IOCTL_VOLUME_OFFLINE \
+\MinGW\include/ddk/ntddvol.h:  CTL_CODE(IOCTL_VOLUME_BASE, 3, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/ddk/ntddvol.h:#define IOCTL_VOLUME_IS_OFFLINE \
+\MinGW\include/ddk/ntddvol.h:  CTL_CODE(IOCTL_VOLUME_BASE, 4, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddvol.h:#define IOCTL_VOLUME_IS_IO_CAPABLE \
+\MinGW\include/ddk/ntddvol.h:  CTL_CODE(IOCTL_VOLUME_BASE, 5, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntddvol.h:#define IOCTL_VOLUME_QUERY_FAILOVER_SET \
+\MinGW\include/ddk/ntddvol.h:  CTL_CODE(IOCTL_VOLUME_BASE, 6, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/ntifs.h:#define IOCTL_REDIR_QUERY_PATH          CTL_CODE(FILE_DEVICE_NETWORK_FILE_SYSTEM, 99, METHOD_NEITHER, FILE_ANY_ACCESS)
+\MinGW\include/ddk/parallel.h:#define IOCTL_INTERNAL_DESELECT_DEVICE \
+\MinGW\include/ddk/parallel.h:#define IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO \
+\MinGW\include/ddk/parallel.h:#define IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO \
+\MinGW\include/ddk/parallel.h:#define IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO \
+\MinGW\include/ddk/parallel.h:#define IOCTL_INTERNAL_INIT_1284_3_BUS \
+\MinGW\include/ddk/parallel.h:#define IOCTL_INTERNAL_PARALLEL_CLEAR_CHIP_MODE \
+\MinGW\include/ddk/parallel.h:#define IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT \
+\MinGW\include/ddk/parallel.h:#define IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT \
+\MinGW\include/ddk/parallel.h:#define IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE \
+\MinGW\include/ddk/parallel.h:#define IOCTL_INTERNAL_PARALLEL_PORT_FREE \
+\MinGW\include/ddk/parallel.h:#define IOCTL_INTERNAL_PARALLEL_SET_CHIP_MODE \
+\MinGW\include/ddk/parallel.h:#define IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO \
+\MinGW\include/ddk/parallel.h:#define IOCTL_INTERNAL_SELECT_DEVICE \
+\MinGW\include/ddk/parallel.h:#define IOCTL_INTERNAL_DISCONNECT_IDLE \
+\MinGW\include/ddk/parallel.h:#define IOCTL_INTERNAL_LOCK_PORT \
+\MinGW\include/ddk/parallel.h:#define IOCTL_INTERNAL_LOCK_PORT_NO_SELECT \
+\MinGW\include/ddk/parallel.h:#define IOCTL_INTERNAL_PARCLASS_CONNECT \
+\MinGW\include/ddk/parallel.h:#define IOCTL_INTERNAL_PARCLASS_DISCONNECT \
+\MinGW\include/ddk/parallel.h:#define IOCTL_INTERNAL_UNLOCK_PORT \
+\MinGW\include/ddk/parallel.h:#define IOCTL_INTERNAL_UNLOCK_PORT_NO_DESELECT \
+\MinGW\include/ddk/pfhook.h:#define IOCTL_PF_SET_EXTENSION_POINTER \
+\MinGW\include/ddk/poclass.h:#define IOCTL_GET_PROCESSOR_OBJ_INFO \
+\MinGW\include/ddk/poclass.h:#define IOCTL_GET_SYS_BUTTON_CAPS \
+\MinGW\include/ddk/poclass.h:#define IOCTL_GET_SYS_BUTTON_EVENT \
+\MinGW\include/ddk/poclass.h:#define IOCTL_SET_SYS_MESSAGE_INDICATOR \
+\MinGW\include/ddk/poclass.h:#define IOCTL_NOTIFY_SWITCH_EVENT \
+\MinGW\include/ddk/poclass.h:#define IOCTL_THERMAL_QUERY_INFORMATION \
+\MinGW\include/ddk/poclass.h:#define IOCTL_THERMAL_SET_COOLING_POLICY \
+\MinGW\include/ddk/poclass.h:#define IOCTL_QUERY_LID \
+\MinGW\include/ddk/poclass.h:#define IOCTL_RUN_ACTIVE_COOLING_METHOD \
+\MinGW\include/ddk/scsi.h:#define IOCTL_SCSI_EXECUTE_IN ((FILE_DEVICE_SCSI << 16) + 0x0011)
+\MinGW\include/ddk/scsi.h:#define IOCTL_SCSI_EXECUTE_OUT ((FILE_DEVICE_SCSI << 16) + 0x0012)
+\MinGW\include/ddk/scsi.h:#define IOCTL_SCSI_EXECUTE_NONE ((FILE_DEVICE_SCSI << 16) + 0x0013)
+\MinGW\include/ddk/scsi.h:#define IOCTL_SCSI_MINIPORT_SMART_VERSION               ((FILE_DEVICE_SCSI << 16) + 0x0500)
+\MinGW\include/ddk/scsi.h:#define IOCTL_SCSI_MINIPORT_IDENTIFY                    ((FILE_DEVICE_SCSI << 16) + 0x0501)
+\MinGW\include/ddk/scsi.h:#define IOCTL_SCSI_MINIPORT_READ_SMART_ATTRIBS          ((FILE_DEVICE_SCSI << 16) + 0x0502)
+\MinGW\include/ddk/scsi.h:#define IOCTL_SCSI_MINIPORT_READ_SMART_THRESHOLDS       ((FILE_DEVICE_SCSI << 16) + 0x0503)
+\MinGW\include/ddk/scsi.h:#define IOCTL_SCSI_MINIPORT_ENABLE_SMART                ((FILE_DEVICE_SCSI << 16) + 0x0504)
+\MinGW\include/ddk/scsi.h:#define IOCTL_SCSI_MINIPORT_DISABLE_SMART               ((FILE_DEVICE_SCSI << 16) + 0x0505)
+\MinGW\include/ddk/scsi.h:#define IOCTL_SCSI_MINIPORT_RETURN_STATUS               ((FILE_DEVICE_SCSI << 16) + 0x0506)
+\MinGW\include/ddk/scsi.h:#define IOCTL_SCSI_MINIPORT_ENABLE_DISABLE_AUTOSAVE     ((FILE_DEVICE_SCSI << 16) + 0x0507)
+\MinGW\include/ddk/scsi.h:#define IOCTL_SCSI_MINIPORT_SAVE_ATTRIBUTE_VALUES       ((FILE_DEVICE_SCSI << 16) + 0x0508)
+\MinGW\include/ddk/scsi.h:#define IOCTL_SCSI_MINIPORT_EXECUTE_OFFLINE_DIAGS       ((FILE_DEVICE_SCSI << 16) + 0x0509)
+\MinGW\include/ddk/scsi.h:#define IOCTL_SCSI_MINIPORT_ENABLE_DISABLE_AUTO_OFFLINE ((FILE_DEVICE_SCSI << 16) + 0x050a)
+\MinGW\include/ddk/scsi.h:#define IOCTL_SCSI_MINIPORT_READ_SMART_LOG              ((FILE_DEVICE_SCSI << 16) + 0x050b)
+\MinGW\include/ddk/scsi.h:#define IOCTL_SCSI_MINIPORT_WRITE_SMART_LOG             ((FILE_DEVICE_SCSI << 16) + 0x050c)
+\MinGW\include/ddk/scsi.h:#define IOCTL_SCSI_MINIPORT_NOT_QUORUM_CAPABLE  ((FILE_DEVICE_SCSI << 16) + 0x0520)
+\MinGW\include/ddk/scsi.h:#define IOCTL_SCSI_MINIPORT_NOT_CLUSTER_CAPABLE ((FILE_DEVICE_SCSI << 16) + 0x0521)
+\MinGW\include/ddk/scsiscan.h:#define IOCTL_SCSISCAN_CMD \
+\MinGW\include/ddk/scsiscan.h:#define IOCTL_SCSISCAN_LOCKDEVICE \
+\MinGW\include/ddk/scsiscan.h:#define IOCTL_SCSISCAN_SET_TIMEOUT \
+\MinGW\include/ddk/scsiscan.h:#define IOCTL_SCSISCAN_GET_INFO \
+\MinGW\include/ddk/scsiscan.h:#define IOCTL_SCSISCAN_UNLOCKDEVICE \
+\MinGW\include/ddk/tdikrnl.h:/* Internal TDI IOCTLS */
+\MinGW\include/ddk/tdikrnl.h:#define IOCTL_TDI_QUERY_DIRECT_SEND_HANDLER   _TDI_CONTROL_CODE(0x80, METHOD_NEITHER)
+\MinGW\include/ddk/tdikrnl.h:#define IOCTL_TDI_QUERY_DIRECT_SENDDG_HANDLER _TDI_CONTROL_CODE(0x81, METHOD_NEITHER)
+\MinGW\include/ddk/usbdi.h:#include "usbioctl.h"
+\MinGW\include/ddk/usbioctl.h: * usbioctl.h
+\MinGW\include/ddk/usbioctl.h: * USB IOCTL interface.
+\MinGW\include/ddk/usbioctl.h:#ifndef __USBIOCTL_H
+\MinGW\include/ddk/usbioctl.h:#define __USBIOCTL_H
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_INTERNAL_USB_CYCLE_PORT \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_INTERNAL_USB_ENABLE_PORT \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_INTERNAL_USB_GET_BUS_INFO \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_INTERNAL_USB_GET_BUSGUID_INFO \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_INTERNAL_USB_GET_CONTROLLER_NAME \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_INTERNAL_USB_GET_DEVICE_HANDLE \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_INTERNAL_USB_GET_HUB_COUNT \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_INTERNAL_USB_GET_HUB_NAME \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_INTERNAL_USB_GET_PARENT_HUB_INFO \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_INTERNAL_USB_GET_PORT_STATUS \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_INTERNAL_USB_RESET_PORT \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_INTERNAL_USB_GET_ROOTHUB_PDO \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_INTERNAL_USB_SUBMIT_IDLE_NOTIFICATION \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_INTERNAL_USB_SUBMIT_URB  \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_USB_DIAG_IGNORE_HUBS_ON \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_USB_DIAG_IGNORE_HUBS_OFF \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_USB_DIAGNOSTIC_MODE_OFF \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_USB_DIAGNOSTIC_MODE_ON \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_USB_GET_DESCRIPTOR_FROM_NODE_CONNECTION \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_USB_GET_HUB_CAPABILITIES \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_USB_GET_ROOT_HUB_NAME \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_GET_HCD_DRIVERKEY_NAME \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_USB_GET_NODE_INFORMATION \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_USB_GET_NODE_CONNECTION_INFORMATION \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_USB_GET_NODE_CONNECTION_NAME \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_USB_HCD_DISABLE_PORT \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_USB_HCD_ENABLE_PORT \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_USB_HCD_GET_STATS_1 \
+\MinGW\include/ddk/usbioctl.h:#define IOCTL_USB_HCD_GET_STATS_2 \
+\MinGW\include/ddk/usbioctl.h:#endif /* __USBIOCTL_H */
+\MinGW\include/ddk/usbiodef.h: * USB IOCTL definitions
+\MinGW\include/ddk/usbscan.h:#define IOCTL_INDEX                       0x0800
+\MinGW\include/ddk/usbscan.h:#define IOCTL_CANCEL_IO \
+\MinGW\include/ddk/usbscan.h:  CTL_CODE(FILE_DEVICE_USB_SCAN, IOCTL_INDEX + 1, METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/ddk/usbscan.h:#define IOCTL_GET_VERSION \
+\MinGW\include/ddk/usbscan.h:  CTL_CODE(FILE_DEVICE_USB_SCAN, IOCTL_INDEX + 0, METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/ddk/usbscan.h:#define IOCTL_GET_CHANNEL_ALIGN_RQST \
+\MinGW\include/ddk/usbscan.h:  CTL_CODE(FILE_DEVICE_USB_SCAN, IOCTL_INDEX + 5, METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/ddk/usbscan.h:#define IOCTL_GET_DEVICE_DESCRIPTOR \
+\MinGW\include/ddk/usbscan.h:  CTL_CODE(FILE_DEVICE_USB_SCAN, IOCTL_INDEX + 6, METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/ddk/usbscan.h:#define IOCTL_GET_PIPE_CONFIGURATION \
+\MinGW\include/ddk/usbscan.h:  CTL_CODE(FILE_DEVICE_USB_SCAN, IOCTL_INDEX + 10,METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/ddk/usbscan.h:#define IOCTL_GET_USB_DESCRIPTOR \
+\MinGW\include/ddk/usbscan.h:  CTL_CODE(FILE_DEVICE_USB_SCAN, IOCTL_INDEX + 8, METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/ddk/usbscan.h:#define IOCTL_READ_REGISTERS \
+\MinGW\include/ddk/usbscan.h:  CTL_CODE(FILE_DEVICE_USB_SCAN, IOCTL_INDEX + 3, METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/ddk/usbscan.h:#define IOCTL_RESET_PIPE \
+\MinGW\include/ddk/usbscan.h:  CTL_CODE(FILE_DEVICE_USB_SCAN, IOCTL_INDEX + 7, METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/ddk/usbscan.h:#define IOCTL_SEND_USB_REQUEST \
+\MinGW\include/ddk/usbscan.h:  CTL_CODE(FILE_DEVICE_USB_SCAN, IOCTL_INDEX + 9, METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/ddk/usbscan.h:#define IOCTL_SET_TIMEOUT \
+\MinGW\include/ddk/usbscan.h:  CTL_CODE(FILE_DEVICE_USB_SCAN, IOCTL_INDEX + 11,METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/ddk/usbscan.h:#define IOCTL_WAIT_ON_DEVICE_EVENT \
+\MinGW\include/ddk/usbscan.h:  CTL_CODE(FILE_DEVICE_USB_SCAN, IOCTL_INDEX + 2, METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/ddk/usbscan.h:#define IOCTL_WRITE_REGISTERS \
+\MinGW\include/ddk/usbscan.h:  CTL_CODE(FILE_DEVICE_USB_SCAN, IOCTL_INDEX + 4, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/ddk/usbuser.h: * USB user mode IOCTL interface
+\MinGW\include/ddk/usbuser.h:#define IOCTL_USB_USER_REQUEST            USB_CTL(HCD_USER_REQUEST)
+\MinGW\include/ddk/usbuser.h:#ifndef IOCTL_USB_DIAGNOSTIC_MODE_ON
+\MinGW\include/ddk/usbuser.h:#define IOCTL_USB_DIAGNOSTIC_MODE_ON      USB_CTL(HCD_DIAGNOSTIC_MODE_ON) 
+\MinGW\include/ddk/usbuser.h:#ifndef IOCTL_USB_DIAGNOSTIC_MODE_OFF
+\MinGW\include/ddk/usbuser.h:#define IOCTL_USB_DIAGNOSTIC_MODE_OFF     USB_CTL(HCD_DIAGNOSTIC_MODE_OFF) 
+\MinGW\include/ddk/usbuser.h:#ifndef IOCTL_USB_GET_ROOT_HUB_NAME
+\MinGW\include/ddk/usbuser.h:#define IOCTL_USB_GET_ROOT_HUB_NAME       USB_CTL(HCD_GET_ROOT_HUB_NAME) 
+\MinGW\include/ddk/usbuser.h:#ifndef IOCTL_GET_HCD_DRIVERKEY_NAME
+\MinGW\include/ddk/usbuser.h:#define IOCTL_GET_HCD_DRIVERKEY_NAME      USB_CTL(HCD_GET_DRIVERKEY_NAME) 
+\MinGW\include/lmerrlog.h:#define NELOG_Ioctl_Error (ERRLOG_BASE+8)
+\MinGW\include/winioctl.h:#ifndef _WINIOCTL_H
+\MinGW\include/winioctl.h:#define _WINIOCTL_H
+\MinGW\include/winioctl.h:#define IOCTL_STORAGE_BASE FILE_DEVICE_MASS_STORAGE
+\MinGW\include/winioctl.h:#define IOCTL_STORAGE_CHECK_VERIFY     CTL_CODE(IOCTL_STORAGE_BASE, 0x0200, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_STORAGE_CHECK_VERIFY2    CTL_CODE(IOCTL_STORAGE_BASE, 0x0200, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_STORAGE_MEDIA_REMOVAL    CTL_CODE(IOCTL_STORAGE_BASE, 0x0201, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_STORAGE_EJECT_MEDIA      CTL_CODE(IOCTL_STORAGE_BASE, 0x0202, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_STORAGE_LOAD_MEDIA       CTL_CODE(IOCTL_STORAGE_BASE, 0x0203, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_STORAGE_LOAD_MEDIA2      CTL_CODE(IOCTL_STORAGE_BASE, 0x0203, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_STORAGE_RESERVE          CTL_CODE(IOCTL_STORAGE_BASE, 0x0204, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_STORAGE_RELEASE          CTL_CODE(IOCTL_STORAGE_BASE, 0x0205, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_STORAGE_FIND_NEW_DEVICES CTL_CODE(IOCTL_STORAGE_BASE, 0x0206, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_STORAGE_EJECTION_CONTROL CTL_CODE(IOCTL_STORAGE_BASE, 0x0250, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_STORAGE_MCN_CONTROL      CTL_CODE(IOCTL_STORAGE_BASE, 0x0251, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_STORAGE_GET_MEDIA_TYPES  CTL_CODE(IOCTL_STORAGE_BASE, 0x0300, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_STORAGE_GET_MEDIA_TYPES_EX CTL_CODE(IOCTL_STORAGE_BASE, 0x0301, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_STORAGE_RESET_BUS        CTL_CODE(IOCTL_STORAGE_BASE, 0x0400, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_STORAGE_RESET_DEVICE     CTL_CODE(IOCTL_STORAGE_BASE, 0x0401, METHOD_BUFFERED, FILE_READ_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_STORAGE_GET_DEVICE_NUMBER CTL_CODE(IOCTL_STORAGE_BASE, 0x0420, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_STORAGE_PREDICT_FAILURE CTL_CODE(IOCTL_STORAGE_BASE, 0x0440, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_BASE FILE_DEVICE_DISK
+\MinGW\include/winioctl.h:#define IOCTL_DISK_GET_DRIVE_GEOMETRY CTL_CODE(IOCTL_DISK_BASE,0,METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_GET_PARTITION_INFO CTL_CODE(IOCTL_DISK_BASE,1,METHOD_BUFFERED,FILE_READ_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_SET_PARTITION_INFO CTL_CODE(IOCTL_DISK_BASE,2,METHOD_BUFFERED,FILE_READ_ACCESS|FILE_WRITE_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_GET_DRIVE_LAYOUT	CTL_CODE(IOCTL_DISK_BASE,3,METHOD_BUFFERED,FILE_READ_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_SET_DRIVE_LAYOUT CTL_CODE(IOCTL_DISK_BASE,4,METHOD_BUFFERED,FILE_READ_ACCESS|FILE_WRITE_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_VERIFY CTL_CODE(IOCTL_DISK_BASE,5,METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_FORMAT_TRACKS CTL_CODE(IOCTL_DISK_BASE,6,METHOD_BUFFERED,FILE_READ_ACCESS|FILE_WRITE_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_REASSIGN_BLOCKS CTL_CODE(IOCTL_DISK_BASE,7,METHOD_BUFFERED,FILE_READ_ACCESS|FILE_WRITE_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_PERFORMANCE CTL_CODE(IOCTL_DISK_BASE,8,METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_IS_WRITABLE CTL_CODE(IOCTL_DISK_BASE,9,METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_LOGGING CTL_CODE(IOCTL_DISK_BASE,10,METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_FORMAT_TRACKS_EX CTL_CODE(IOCTL_DISK_BASE,11,METHOD_BUFFERED,FILE_READ_ACCESS|FILE_WRITE_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_HISTOGRAM_STRUCTURE CTL_CODE(IOCTL_DISK_BASE,12,METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_HISTOGRAM_DATA CTL_CODE(IOCTL_DISK_BASE,13,METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_HISTOGRAM_RESET CTL_CODE(IOCTL_DISK_BASE,14,METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_REQUEST_STRUCTURE CTL_CODE(IOCTL_DISK_BASE,15,METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_REQUEST_DATA CTL_CODE(IOCTL_DISK_BASE,16,METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_GET_PARTITION_INFO_EX CTL_CODE(IOCTL_DISK_BASE,0x12,METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_SET_PARTITION_INFO_EX CTL_CODE(IOCTL_DISK_BASE,0x13,METHOD_BUFFERED,FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_GET_DRIVE_LAYOUT_EX CTL_CODE(IOCTL_DISK_BASE,0x14,METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_SET_DRIVE_LAYOUT_EX CTL_CODE(IOCTL_DISK_BASE,0x15,METHOD_BUFFERED,FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_CREATE_DISK CTL_CODE(IOCTL_DISK_BASE,0x16,METHOD_BUFFERED,FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_GET_LENGTH_INFO CTL_CODE(IOCTL_DISK_BASE,0x17,METHOD_BUFFERED,FILE_READ_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_PERFORMANCE_OFF CTL_CODE(IOCTL_DISK_BASE,0x18,METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_GET_DRIVE_GEOMETRY_EX CTL_CODE(IOCTL_DISK_BASE,0x28,METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_GROW_PARTITION CTL_CODE(IOCTL_DISK_BASE,0x34,METHOD_BUFFERED,FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_GET_CACHE_INFORMATION CTL_CODE(IOCTL_DISK_BASE,0x35,METHOD_BUFFERED,FILE_READ_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_SET_CACHE_INFORMATION CTL_CODE(IOCTL_DISK_BASE,0x36,METHOD_BUFFERED,FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_DELETE_DRIVE_LAYOUT CTL_CODE(IOCTL_DISK_BASE,0x40,METHOD_BUFFERED,FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_UPDATE_PROPERTIES CTL_CODE(IOCTL_DISK_BASE,0x50,METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_CHECK_VERIFY CTL_CODE(IOCTL_DISK_BASE,0x200,METHOD_BUFFERED,FILE_READ_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_MEDIA_REMOVAL CTL_CODE(IOCTL_DISK_BASE,0x201,METHOD_BUFFERED,FILE_READ_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_EJECT_MEDIA CTL_CODE(IOCTL_DISK_BASE,0x202,METHOD_BUFFERED,FILE_READ_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_LOAD_MEDIA CTL_CODE(IOCTL_DISK_BASE,0x203,METHOD_BUFFERED,FILE_READ_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_RESERVE CTL_CODE(IOCTL_DISK_BASE,0x204,METHOD_BUFFERED,FILE_READ_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_RELEASE CTL_CODE(IOCTL_DISK_BASE,0x205,METHOD_BUFFERED,FILE_READ_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_FIND_NEW_DEVICES CTL_CODE(IOCTL_DISK_BASE,0x206,METHOD_BUFFERED,FILE_READ_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_REMOVE_DEVICE CTL_CODE(IOCTL_DISK_BASE,0x207,METHOD_BUFFERED,FILE_READ_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_GET_MEDIA_TYPES CTL_CODE(IOCTL_DISK_BASE,0x300,METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_DISK_UPDATE_DRIVE_SIZE CTL_CODE(IOCTL_DISK_BASE, 0x0032, METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_SERIAL_LSRMST_INSERT	CTL_CODE(FILE_DEVICE_SERIAL_PORT,31,METHOD_BUFFERED,FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_VOLUME_BASE   ((ULONG) 'V')
+\MinGW\include/winioctl.h:#define IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS \
+\MinGW\include/winioctl.h:  CTL_CODE(IOCTL_VOLUME_BASE, 0, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/winioctl.h:#define IOCTL_VOLUME_IS_CLUSTERED \
+\MinGW\include/winioctl.h:  CTL_CODE(IOCTL_VOLUME_BASE, 12, METHOD_BUFFERED, FILE_ANY_ACCESS)
+\MinGW\include/winsock.h:int PASCAL ioctlsocket(SOCKET,long,u_long *);
+\MinGW\include/winsock2.h:WINSOCK_API_LINKAGE int PASCAL ioctlsocket(SOCKET,long,u_long *);
+\MinGW\include/winsock2.h:typedef int (PASCAL * LPFN_IOCTLSOCKET)(SOCKET, long, u_long*);
+\MinGW\include/winsock2.h:/* Needed for XP & .NET Server function WSANSPIoctl.  */
+\MinGW\include/winsock2.h:WINSOCK_API_LINKAGE int WINAPI WSAIoctl(SOCKET, DWORD, LPVOID, DWORD, LPVOID, DWORD, LPDWORD, LPWSAOVERLAPPED, LPWSAOVERLAPPED_COMPLETION_ROUTINE);
+\MinGW\include/winsock2.h:WINSOCK_API_LINKAGE int WINAPI WSANSPIoctl(HANDLE,DWORD,LPVOID,DWORD,LPVOID,DWORD,LPDWORD,LPWSACOMPLETION); /* XP or .NET Server */
+\MinGW\include/winsock2.h:typedef int (WINAPI *LPFN_WSAIOCTL)(SOCKET, DWORD, LPVOID, DWORD, LPVOID, DWORD, LPDWORD, LPWSAOVERLAPPED, LPWSAOVERLAPPED_COMPLETION_ROUTINE);
+\MinGW\include/winsock2.h:typedef int (WINAPI *LPFN_WSANSPIoctl)(HANDLE, DWORD,LPVOID,DWORD,LPVOID,DWORD,LPDWORD,LPWSACOMPLETION);
+\MinGW\include/ws2spi.h:typedef INT (WSPAPI *LPWSPIOCTL)(SOCKET,DWORD,LPVOID,DWORD,LPVOID,DWORD,LPDWORD,
+\MinGW\include/ws2spi.h:  LPWSPIOCTL lpWSPIoctl;
+\MinGW\include/ws2tcpip.h:   See: FIX: WSAIoctl SIO_GET_INTERFACE_LIST Option Problem
+\MinGW\include/wsahelp.h:INT WINAPI WSHIoctl(PVOID,SOCKET,HANDLE,HANDLE,DWORD,LPVOID,DWORD,LPVOID,DWORD,
+\MinGW\include/wsahelp.h:typedef INT (WINAPI *PWSH_IOCTL)(PVOID,SOCKET,HANDLE,HANDLE,DWORD,LPVOID,DWORD,
